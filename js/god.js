@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('godName').textContent = godName.charAt(0).toUpperCase() + godName.slice(1);
 
     // Function to fetch and display Aarti content
-    document.addEventListener('DOMContentLoaded', () => {
       fetch(`data/${godName}/aarti.json`, {
           method: 'GET',
           headers: {
@@ -32,9 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
               console.error('Aarti section not found in the DOM');
           }
       })
-      .catch(error => console.error('Error fetching Aarti data:', error));
-  });
-  
+      .catch(error => console.error('Error fetching Aarti data:', error)
+    );  
 
     // // Function to fetch and display Chalisa content
     // fetch(`data/${godName}/chalisa.json`)
