@@ -35,15 +35,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
           if (aartiDescription) {
             const div = document.createElement('div');
-            div.innerHTML = `<h2>${data[0].description}</h2>`;
-            aartiTitle.appendChild(div);
+            div.innerHTML = `<p>${data[0].description}</p>`;
+            aartiDescription.appendChild(div);
           } else {
               console.error('Aarti Description not found in the DOM');
           }
 
           if (chalisaTitle) {
             const div = document.createElement('div');
-            div.innerHTML = `<h1>${data[1].title}</h1>`;//<h2>${data[1].description}</h2>`;
+            div.innerHTML = `<h1>${data[1].title}</h1>`;//<p>${data[1].description}</p>`;
             chalisaTitle.appendChild(div);
           } else {
             console.error('Chalisa Title not found in the DOM');
@@ -51,15 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
           if (chalisaDescription) {
             const div = document.createElement('div');
-            div.innerHTML = `<h2>${data[1].description}</h2>`;
-            chalisaTitle.appendChild(div);
+            div.innerHTML = `<p>${data[1].description}</p>`;
+            chalisaDescription.appendChild(div);
           } else {
             console.error('Aarti Description not found in the DOM');
           }
 
           if (stotraTitle) {
             const div = document.createElement('div');
-            div.innerHTML = `<h1>${data[2].title}</h1>`;//<h2>${data[2].description}</h2>`;
+            div.innerHTML = `<h1>${data[2].title}</h1>`;//<p>${data[2].description}</p>`;
             stotraTitle.appendChild(div);
           } else {
             console.error('Strotra title not found in the DOM');
@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
           if (stotraDescription) {
             const div = document.createElement('div');
-            div.innerHTML = `<h2>${data[2].description}</h2>`;
-            stotraTitle.appendChild(div);
+            div.innerHTML = `<p>${data[2].description}</p>`;
+            stotraDescription.appendChild(div);
           } else {
             console.error('Strotra Description not found in the DOM');
           }
