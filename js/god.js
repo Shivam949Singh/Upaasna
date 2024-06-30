@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (aartiSection) {
               // data.forEach(item => {
                   const div = document.createElement('div');
-                  div.innerHTML = `<h2>${data.title}</h2><p>${data.description}</p>`;
+                  div.innerHTML = `<h2>${data[0].title}</h2><p>${data.description}</p>`;
                   aartiSection.appendChild(div);
               // });
           } else {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (chalisaSection) {
               // data.forEach(item => {
                   const div = document.createElement('div');
-                  div.innerHTML = `<h2>${data.title}</h2><p>${data.description}</p>`;
+                  div.innerHTML = `<h2>${data[1].title}</h2><p>${data.description}</p>`;
                   chalisaSection.appendChild(div);
               // });
           } else {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (stotraSection) {
               // data.forEach(item => {
                   const div = document.createElement('div');
-                  div.innerHTML = `<h2>${data.title}</h2><p>${data.description}</p>`;
+                  div.innerHTML = `<h2>${data[2].title}</h2><p>${data.description}</p>`;
                   stotraSection.appendChild(div);
               // });
           } else {
