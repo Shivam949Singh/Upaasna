@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('God name ===--->', godName);
   document.getElementById('godName').textContent = godName.charAt(0).toUpperCase() + godName.slice(1);
 
-  const navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
+  const subNavLinks = document.querySelectorAll('.sub-nav-link');
+  subNavLinks.forEach(link => {
       link.addEventListener('click', function(event) {
           event.preventDefault();
           const section = event.target.dataset.section;

@@ -64,9 +64,37 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.sub-navbar {
+    background-color: rgba(74, 74, 119, 0.8);
+    color: #fff;
+    padding: 0.5em 0;
+    position: fixed;
+    top: 70px; /* Adjust to match the height of your header */
+    width: 100%;
+    z-index: 999;
+}
+
+.sub-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
+}
+
+.sub-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sub-navbar ul li a:hover {
+    text-decoration: underline;
+}
+
 main {
     max-width: 1200px;
-    margin: 100px auto 2em; /* Adjust margin-top to account for the fixed header */
+    margin: 110px auto 2em; /* Adjust margin-top to account for the fixed header and sub-navbar */
     padding: 0 1em;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
