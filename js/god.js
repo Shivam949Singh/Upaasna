@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (aartiDescription) {
             const div = document.createElement('div');
             div.innerHTML = `<h2>${data[0].description}</h2>`;
-            aartiDescription.appendChild(div);
+            aartiTitle.appendChild(div);
           } else {
               console.error('Aarti Description not found in the DOM');
           }
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (chalisaDescription) {
             const div = document.createElement('div');
             div.innerHTML = `<h2>${data[1].description}</h2>`;
-            chalisaDescription.appendChild(div);
+            chalisaTitle.appendChild(div);
           } else {
             console.error('Aarti Description not found in the DOM');
           }
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (stotraDescription) {
             const div = document.createElement('div');
             div.innerHTML = `<h2>${data[2].description}</h2>`;
-            stotraDescription.appendChild(div);
+            stotraTitle.appendChild(div);
           } else {
             console.error('Strotra Description not found in the DOM');
           }
