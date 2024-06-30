@@ -1,0 +1,137 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/background_images/mandla.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #FF9933;
+    color: #333;
+}
+
+header {
+    background-color: rgba(74, 74, 119, 0.8);
+    color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 100px auto 2em; /* Adjust margin-top to account for the fixed header */
+    padding: 0 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-item {
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgba(74, 74, 119, 0.8);
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.social-media {
+    margin-top: 1em;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.social-icon:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 1em;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
