@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
           }
 
           if (chalisaTitle) {
-                  const div = document.createElement('div');
-                  div.innerHTML = `<h1>${data[1].title}</h1>`;//<h2>${data[1].description}</h2>`;
-                  chalisaTitle.appendChild(div);
+            const div = document.createElement('div');
+            div.innerHTML = `<h1>${data[1].title}</h1>`;//<h2>${data[1].description}</h2>`;
+            chalisaTitle.appendChild(div);
           } else {
-              console.error('Chalisa Title not found in the DOM');
+            console.error('Chalisa Title not found in the DOM');
           }
 
           if (chalisaDescription) {
@@ -54,15 +54,15 @@ document.addEventListener('DOMContentLoaded', function() {
             div.innerHTML = `<h2>${data[1].description}</h2>`;
             chalisaDescription.appendChild(div);
           } else {
-              console.error('Aarti Description not found in the DOM');
+            console.error('Aarti Description not found in the DOM');
           }
 
           if (stotraTitle) {
-                  const div = document.createElement('div');
-                  div.innerHTML = `<h1>${data[2].title}</h1>`;//<h2>${data[2].description}</h2>`;
-                  stotraTitle.appendChild(div);
+            const div = document.createElement('div');
+            div.innerHTML = `<h1>${data[2].title}</h1>`;//<h2>${data[2].description}</h2>`;
+            stotraTitle.appendChild(div);
           } else {
-              console.error('Strotra title not found in the DOM');
+            console.error('Strotra title not found in the DOM');
           }
 
           if (stotraDescription) {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             div.innerHTML = `<h2>${data[2].description}</h2>`;
             stotraDescription.appendChild(div);
           } else {
-              console.error('Aarti Description not found in the DOM');
+            console.error('Strotra Description not found in the DOM');
           }
       })
       .catch(error => console.error('Error fetching Aarti data:', error)

@@ -85,6 +85,10 @@ main {
     margin-top: 3px;
 }
 
+#stotra_title, #chalisa_title, #aarti_title{
+    background-color: #e9ed10;
+}
+
 footer {
     text-align: center;
     padding: 1em 0;
