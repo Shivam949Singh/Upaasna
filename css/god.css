@@ -83,6 +83,8 @@ main {
 
 #aarti_description, #chalisa_description, #stotra_description{
     margin-top: 3px;
+    font-size: larger;
+    font-weight: 600;
 }
 
 #stotra_title, #chalisa_title, #aarti_title{
