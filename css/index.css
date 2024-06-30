@@ -73,7 +73,7 @@ main {
 }
 
 .god-item {
-    width: calc(33.333% - 1em);
+    width: calc(25% - 1em);
     text-align: center;
     margin: 1em 0.5em; /* Adjusted margin for better spacing */
 }
@@ -81,8 +81,8 @@ main {
 .god-image {
     width: 100%;
     height: auto;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 50%;
     cursor: pointer;
 }
