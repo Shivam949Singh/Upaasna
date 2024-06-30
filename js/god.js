@@ -5,24 +5,36 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('godName').textContent = godName.charAt(0).toUpperCase() + godName.slice(1);
 
     // Function to fetch and display Aarti content
-    fetch(`data/${godName}/aarti.json`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch(`data/${godName}/aarti.json`, {
+          method: 'GET',
+          headers: {
+              'Content-Type': 'application/json'
+          }
       })
-        .then(response => response.json())
-        .then(data => {
-          console.log('recieved data : ', data);
-            const aartiSection = document.getElementById('aarti');
-            console.log('aarti section : ', aartiSection);
-            data.forEach(item => {
-                const div = document.createElement('div');
-                div.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
-                aartiSection.appendChild(div);
-            });
-        })
-            .catch(error => console.error('Error fetching Aarti data:', error));
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.json();
+      })
+      .then(data => {
+          console.log('Received data:', data);
+          const aartiSection = document.getElementById('aarti');
+          console.log('aartiSection : ', aartiSection);
+          if (aartiSection) {
+              // data.forEach(item => {
+                  const div = document.createElement('div');
+                  div.innerHTML = `<h3>${data.title}</h3><p>${data.description}</p>`;
+                  aartiSection.appendChild(div);
+              // });
+          } else {
+              console.error('Aarti section not found in the DOM');
+          }
+      })
+      .catch(error => console.error('Error fetching Aarti data:', error));
+  });
+  
 
     // // Function to fetch and display Chalisa content
     // fetch(`data/${godName}/chalisa.json`)
