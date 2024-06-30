@@ -20,12 +20,32 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(data => {
           console.log('Received data:', data);
           const aartiSection = document.getElementById('aarti');
+          const chalisaSection = document.getElementById('chalisa');
+          const stotraSection = document.getElementById('stotra');
           console.log('aartiSection : ', aartiSection);
           if (aartiSection) {
               // data.forEach(item => {
                   const div = document.createElement('div');
-                  div.innerHTML = `<h3>${data.title}</h3><p>${data.description}</p>`;
+                  div.innerHTML = `<h2>${data.title}</h2><p>${data.description}</p>`;
                   aartiSection.appendChild(div);
+              // });
+          } else {
+              console.error('Aarti section not found in the DOM');
+          }
+          if (chalisaSection) {
+              // data.forEach(item => {
+                  const div = document.createElement('div');
+                  div.innerHTML = `<h2>${data.title}</h2><p>${data.description}</p>`;
+                  chalisaSection.appendChild(div);
+              // });
+          } else {
+              console.error('Aarti section not found in the DOM');
+          }
+          if (stotraSection) {
+              // data.forEach(item => {
+                  const div = document.createElement('div');
+                  div.innerHTML = `<h2>${data.title}</h2><p>${data.description}</p>`;
+                  stotraSection.appendChild(div);
               // });
           } else {
               console.error('Aarti section not found in the DOM');
