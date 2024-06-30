@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
           console.log('recieved data : ', data);
             const aartiSection = document.getElementById('aarti');
+            console.log('aarti section : ', aartiSection);
             data.forEach(item => {
                 const div = document.createElement('div');
                 div.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
