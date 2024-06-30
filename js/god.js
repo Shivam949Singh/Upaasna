@@ -24,29 +24,23 @@ document.addEventListener('DOMContentLoaded', function() {
           const stotraSection = document.getElementById('stotra');
           console.log('aartiSection : ', aartiSection);
           if (aartiSection) {
-              // data.forEach(item => {
                   const div = document.createElement('div');
-                  div.innerHTML = `<h2>${data[0].title}</h2><p>${data.description}</p>`;
+                  div.innerHTML = `<h2>${data[0].title}</h2><p>${data[0].description}</p>`;
                   aartiSection.appendChild(div);
-              // });
           } else {
               console.error('Aarti section not found in the DOM');
           }
           if (chalisaSection) {
-              // data.forEach(item => {
                   const div = document.createElement('div');
-                  div.innerHTML = `<h2>${data[1].title}</h2><p>${data.description}</p>`;
+                  div.innerHTML = `<h2>${data[1].title}</h2><p>${data[1].description}</p>`;
                   chalisaSection.appendChild(div);
-              // });
           } else {
               console.error('Aarti section not found in the DOM');
           }
           if (stotraSection) {
-              // data.forEach(item => {
                   const div = document.createElement('div');
-                  div.innerHTML = `<h2>${data[2].title}</h2><p>${data.description}</p>`;
+                  div.innerHTML = `<h2>${data[2].title}</h2><p>${data[2].description}</p>`;
                   stotraSection.appendChild(div);
-              // });
           } else {
               console.error('Aarti section not found in the DOM');
           }
