@@ -75,30 +75,4 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .catch(error => console.error('Error fetching Aarti data:', error)
     );  
-
-    // // Function to fetch and display Chalisa content
-    // fetch(`data/${godName}/chalisa.json`)
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         const chalisaSection = document.getElementById('chalisa');
-    //         data.forEach(item => {
-    //             const div = document.createElement('div');
-    //             div.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
-    //             chalisaSection.appendChild(div);
-    //         });
-    //     })
-    //     .catch(error => console.error('Error fetching Chalisa data:', error));
-
-    // // Function to fetch and display Stotra content
-    // fetch(`data/${godName}/stotra.json`)
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         const stotraSection = document.getElementById('stotra');
-    //         data.forEach(item => {
-    //             const div = document.createElement('div');
-    //             div.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
-    //             stotraSection.appendChild(div);
-    //         });
-    //     })
-    //     .catch(error => console.error('Error fetching Stotra data:', error));
 });
