@@ -27,7 +27,7 @@ header {
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    position: static;
+    position: relative;
     margin: 0 auto;
     padding: 0 1em;
 }
@@ -134,6 +134,7 @@ footer {
     .header-container {
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
 
     header h1 {
